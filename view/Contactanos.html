@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html long ="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alcohol CMG</title>   
+  <link rel=stylesheet href='styles/styles.css'>
+  <link rel=stylesheet href='styles/fontello.css'>
+
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Font Awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+	<!-- Google Fonts -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+	<!-- Bootstrap core CSS -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Material Design Bootstrap -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+	<!-- JQuery -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- Bootstrap tooltips -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+	<!-- Bootstrap core JavaScript -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+	<!-- MDB core JavaScript -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="contenedor">
+            <h1 class="icon-plus">Alcohol Etilico F+</h1><!-- Izquierda del header-->
+            <input type="checkbox" id="menu-bar"><!-- Un input para que sirva como boton-->
+            <label class="icon-menu" for="menu-bar"></label><!-- el input se activa o se desactiva-->
+            <nav class="menu">
+                <a href="Pagina.html">Inicio</a>
+                <a href="Productos.html">Producto</a>
+                <a href="Comenta.html">Comenta</a>
+                <a href="Contactanos.html">Contactanos</a>
+            </nav>
+        </div>
+    </header>
+<br><br><br><br><br><br><br><br>
+
+<!--Formulario  -->
+
+<h2 class="h2-responsive text-center mb-4">Mandanos un Email.</h2>
+
+<div class="container-fluid mt-8 justify-content-xl-center text-center mb-5" >
+	<form action="../controller/correo.php" method="POST">
+		<div class="form-row-cols-1 mb-3">
+			<div class="col-lg-6 col-md-7 col-sm-9 col-12 m-auto">
+				<input type="text" class="form-control mb-3" placeholder="Nombre" name="nombre" required >
+			</div>
+			<div class="col-lg-6 col-md-7 col-sm-9 col-12 m-auto">
+				<input type="text" class="form-control mb-3" placeholder="Su email"  name="email" required>
+			</div>
+			<div class="col-lg-6 col-md-7 col-sm-9 col-12 m-auto">
+				<input type="text" class="form-control mb-3" placeholder="Asunto"  name="asunto" required>
+			</div>	 
+			<div class="col-lg-6 col-md-7 col-sm-9 col-12 m-auto">
+				<textarea  class="form-control" rows="5 " placeholder="Mensaje" name="mensaje" required></textarea>
+			</div>
+		</div>
+
+		<input type="submit" class="btn btn-primary btn-md ml-3" value="Enviar">
+		<a href="Pagina.html"> <button type="button" class="btn btn-danger btn-md">Cancelar</button></a>
+	</form>	
+	<hr>
+</div>
+
+<div class="row justify-content-center">
+	<div class="align-self-center">
+<div class="col-lg-6 card border-success mb-3" style="max-width: 18rem; text-align:center;">
+	<div class="card-header bg-transparent border-success"><a class="icon-whatsapp">Nuestro Whatsapp:</a> </div>
+	<div class="card-body text-success">
+	  <h5 class="card-title">+45 9 11 3947-0039</h5>
+	</div>
+	<div class="card-footer bg-transparent border-success">Tiempo de respuesta promedio de 3hs</div>
+  </div>
+</div>
+</div>
+</div>
+
+<br><br>
+
+<!-- Footer -->
+<footer>
+	<div class="contenedor">
+		<p class="copy">CMG &copy; 2020</p>
+		<div class="Sociales">
+			<a class="icon-gmail" href="Contactanos.html"></a>
+			<a class="icon-facebook" href="https://www.facebook.com/profile.php?id=100057570185983"></a>
+			<a class="icon-whatsapp" href="+54 11 3947-0039"></a>
+			<a class="icon-instagram" href="https://www.instagram.com/alcoholcmg/"></a>
+		</div>
+	</div>
+</footer>
+
+</body>
+</html>
